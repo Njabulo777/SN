@@ -703,7 +703,7 @@ ID2
 </tbody>
 </table>
 
-# The following are some of the questions and the respective queries that seek to answer them
+# The following are some of the questions and the respective queries that seek to answer them.
 
 **Find the names of all students who are friends with someone named
 Gabriel.**
@@ -781,9 +781,7 @@ Alexis
 </tbody>
 </table>
 
-**For every student who likes someone 2 or more grades younger than
-themselves, return that student’s name and grade, and the name and grade
-of the student they like.**
+## For every student who likes someone 2 or more grades younger than themselves, return that student’s name and grade, and the name and grade of the student they like.
 
 ``` sql
 WITH liking_student AS
@@ -852,9 +850,7 @@ Haley
 </tbody>
 </table>
 
-**For every pair of students who both like each other, return the name
-and grade of both students. Include each pair only once, with the two
-names in alphabetical order.**
+## For every pair of students who both like each other, return the name and grade of both students. Include each pair only once, with the two names in alphabetical order.
 
 ``` sql
 WITH combined AS
@@ -944,9 +940,7 @@ Kyle
 </tbody>
 </table>
 
-**Find all students who do not appear in the Likes table (as a student
-who likes or is liked) and return their names and grades. Sort by grade,
-then by name within each grade.**
+## Find all students who do not appear in the Likes table (as a student who likes or is liked) and return their names and grades. Sort by grade, then by name within each grade.
 
 ``` sql
 SELECT 
@@ -1010,9 +1004,7 @@ Logan
 </tbody>
 </table>
 
-**For every situation where student A likes student B, but we have no
-information about whom B likes (that is, B does not appear as an ID1 in
-the Likes table), return A and B’s names and grades.**
+## For every situation where student A likes student B, but we have no information about whom B likes (that is, B does not appear as an ID1 in the Likes table), return A and B’s names and grades.
 
 ``` sql
 
@@ -1119,9 +1111,7 @@ Haley
 </tbody>
 </table>
 
-**Find names and grades of students who only have friends in the same
-grade. Return the result sorted by grade, then by name within each
-grade.**
+## Find names and grades of students who only have friends in the same grade. Return the result sorted by grade, then by name within each grade.
 
 ``` sql
 WITH student AS
@@ -1224,9 +1214,7 @@ Logan
 </tbody>
 </table>
 
-**For each student A who likes a student B where the two are not
-friends, find if they have a friend C in common (who can introduce
-them!). For all such trios, return the name and grade of A, B, and C.**
+## For each student A who likes a student B where the two are not friends, find if they have a friend C in common (who can introduce them!). For all such trios, return the name and grade of A, B, and C.
 
 ``` sql
 With pair_likes AS
@@ -1393,8 +1381,7 @@ Kyle
 </tbody>
 </table>
 
-**Find the difference between the number of students in the school and
-the number of different first names.**
+## Find the difference between the number of students in the school and the number of different first names.
 
 ``` sql
 SELECT count(ID)-count(distinct name) AS answer
@@ -1425,8 +1412,7 @@ answer
 </tbody>
 </table>
 
-**Find the name and grade of all students who are liked by more than one
-other student.**
+## Find the name and grade of all students who are liked by more than one other student.
 
 ``` sql
 
