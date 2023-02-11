@@ -705,8 +705,7 @@ ID2
 
 # The following are some of the questions and the respective queries that seek to answer them.
 
-**Find the names of all students who are friends with someone named
-Gabriel.**
+## Find the names of all students who are friends with someone named Gabriel.
 
 ``` sql
 WITH gabriel_id AS (
